@@ -73,10 +73,10 @@ write:</p>
   the value(s) returned by this procedure is(are) returned by the 
   <samp>`case'</samp> expression. </font></p>
 <p>(Based on R5RS section 3.5 Proper tail recursion)</p>
-<dd>If a <tt>cond</tt> <font color="#FF0000">or <tt>case</tt></font> expression is in a tail context, and has a clause of the 
+<p>If a <tt>cond</tt> <font color="#FF0000">or <tt>case</tt></font> expression is in a tail context, and has a clause of the 
 form <tt>(&lt;expression<sub>1</sub>&gt; =&gt; &lt;expression<sub>2</sub>&gt;)</tt> then the 
 (implied) call to the procedure that results from the evaluation of &lt;expression<sub>2</sub>&gt; 
-is in a tail context. &lt;expression<sub>2</sub>&gt; itself is not in a tail context.</dd>
+is in a tail context. &lt;expression<sub>2</sub>&gt; itself is not in a tail context.</p>
 <h2>Implementation</h2>
 <blockquote><pre><code>(define-syntax case
   (syntax-rules (else =&gt;)
@@ -129,4 +129,4 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <address>Editor: <a href="mailto:srfi-editors%20at%20srfi%20dot%20schemers%20dot%20org">Mike 
 Sperber</a></address><!-- Created: Tue Sep 29 19:20:08 EDT 1998 --><!-- hhmts start -->Last 
-modified: Mon Apr 10 21:20:25 CEST 2006 <!-- hhmts end --></p></body></html>
+modified: Mon Apr 10 21:20:25 CEST 2006 <!-- hhmts end --></body></html>
